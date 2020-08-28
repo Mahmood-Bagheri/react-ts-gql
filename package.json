@@ -26,7 +26,8 @@
         "eject": "react-scripts eject",
         "format": "prettier --write src",
         "styleguidist:server": "styleguidist server",
-        "styleguidist:build": "styleguidist build"
+        "styleguidist:build": "styleguidist build",
+        "codegen": "graphql-codegen --config codegen.yml"
     },
     "eslintConfig": {
         "extends": "react-app"
@@ -44,7 +45,9 @@
         ]
     },
     "devDependencies": {
-        "@graphql-codegen/cli": "^1.17.8",
+        "@graphql-codegen/cli": "1.17.8",
+        "@graphql-codegen/typescript": "^1.17.9",
+        "@graphql-codegen/typescript-operations": "^1.17.8",
         "autoprefixer": "^9.8.6",
         "postcss-cli": "^7.1.1",
         "prettier": "^2.1.1",
