@@ -1,14 +1,15 @@
 overwrite: true
 schema: "https://graphqlzero.almansi.me/api"
-documents: "src/**/*.ts"
+documents: "src/graphql/**/*.ts"
 config:
-    withHooks: true
-    withHoc: false
-    withComponent: false
-    avoidOptionals: true
-    maybeValue: T
+  withHooks: true
+  avoidOptionals: true
+  reactApolloVersion: 3
+  apolloReactHooksImportFrom: "@apollo/client"
+  withResultType: true
 generates:
-    src/graphql/generated.tsx:
-        plugins:
-            - "typescript"
-            - "typescript-operations"
+  src/graphql/generated.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
