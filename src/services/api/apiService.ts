@@ -16,4 +16,5 @@ applyAccessTokenRevalidator(apiService);
 applyErrorHandler(apiService);
 applyResponseNormalizer(apiService);
 
+export * from "axios";
 export default apiService;
