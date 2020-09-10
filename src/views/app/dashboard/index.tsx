@@ -2,7 +2,7 @@ import React, { Suspense, FunctionComponent } from "react";
 import { Route, Switch, Redirect, useRouteMatch } from "react-router-dom";
 
 const Intro = React.lazy(
-    () => import(/* webpackChunkName: "viwes-dashboard-intro" */ "./intro")
+    () => import(/* webpackChunkName: "viwes-dashboard-intro" */ "./Intro")
 );
 
 const Dashboard: FunctionComponent = () => {
