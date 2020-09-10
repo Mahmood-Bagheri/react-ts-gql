@@ -8,6 +8,7 @@ import { AuthRoute } from "services/auth/AuthRoute";
 
 // * helpers
 import { history } from "helpers/history";
+import { hot } from "react-hot-loader/root";
 
 const ViewMain = React.lazy(
     () => import(/* webpackChunkName: "views" */ "./views")
@@ -57,4 +58,4 @@ const App: FunctionComponent = () => {
     );
 };
 
-export default App;
+export default hot(App);
