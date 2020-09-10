@@ -1,4 +1,4 @@
-export default {
+export const Routes = {
     dashboard: {
         intro: "/app/dashboard/intro",
     },
