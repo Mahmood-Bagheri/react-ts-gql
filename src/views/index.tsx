@@ -1,11 +1,8 @@
 import React, { FunctionComponent } from "react";
 import { Redirect } from "react-router-dom";
 
-// * constants
-import { appPrefix } from "constants/Routes";
-
 const Main: FunctionComponent = () => {
-    return <Redirect to={appPrefix} />;
+    return <Redirect to="/app" />;
 };
 
 export default Main;

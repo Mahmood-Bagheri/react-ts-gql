@@ -1,9 +1,6 @@
 import React, { Suspense, FunctionComponent } from "react";
 import { Route, Switch, Redirect, useRouteMatch } from "react-router-dom";
 
-// * constants
-import { appRoutes, appSectionsPrefix } from "constants/Routes";
-
 const Dashboard = React.lazy(
     () => import(/* webpackChunkName: "viwes-dashboard" */ "./dashboard")
 );
@@ -17,15 +14,12 @@ const App: FunctionComponent = () => {
                 <Redirect
                     exact
                     from={`${match.url}/`}
-                    to={appSectionsPrefix.dashboard}
+                    to={`${match.url}/dashboard`}
                 />
 
-                <Route
-                    path={appSectionsPrefix.dashboard}
-                    component={Dashboard}
-                />
+                <Route path={`${match.url}/dashboard`} component={Dashboard} />
 
-                <Redirect to={appRoutes.error} />
+                <Redirect to="/error" />
             </Switch>
         </Suspense>
     );
