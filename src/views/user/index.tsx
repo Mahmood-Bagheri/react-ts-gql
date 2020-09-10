@@ -1,6 +1,9 @@
 import React, { Suspense, FunctionComponent } from "react";
 import { Route, Switch, Redirect, RouteComponentProps } from "react-router-dom";
 
+// * constants
+import { appRoutes } from "constants/Routes";
+
 const Login = React.lazy(
     () => import(/* webpackChunkName: "user-login" */ "./login")
 );
@@ -14,11 +17,11 @@ const User: FunctionComponent<UserProps> = ({ match }) => {
                 <Redirect
                     exact
                     from={`${match.url}/`}
-                    to={`${match.url}/login`}
+                    to={appRoutes.user.login}
                 />
-                <Route path={`${match.url}/login`} component={Login} />
+                <Route path={appRoutes.user.login} component={Login} />
 
-                <Redirect to="/error" />
+                <Redirect to={appRoutes.error} />
             </Switch>
         </Suspense>
     );
