@@ -4,6 +4,7 @@
     "private": true,
     "dependencies": {
         "@apollo/client": "^3.1.4",
+        "@craco/craco": "^5.6.4",
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.3.2",
         "@testing-library/user-event": "^7.1.2",
@@ -36,11 +37,11 @@
         "typescript": "~3.7.2"
     },
     "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
+        "start": "craco start",
+        "build": "craco build",
         "build:style": "tailwind build src/assets/styles/tailwind.css -o src/assets/styles/main.css",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
+        "test": "craco test",
+        "eject": "craco eject",
         "format": "prettier --write src",
         "styleguidist:server": "styleguidist server",
         "styleguidist:build": "styleguidist build",
@@ -62,6 +63,7 @@
             "last 1 safari version"
         ]
     },
+    "cracoConfig": "internals/config-overrides.js",
     "devDependencies": {
         "@graphql-codegen/cli": "1.17.8",
         "@graphql-codegen/typescript": "^1.17.9",
@@ -71,6 +73,7 @@
         "postcss-cli": "^7.1.1",
         "prettier": "^2.1.1",
         "react-styleguidist": "^11.0.8",
-        "tailwindcss": "^1.7.5"
+        "tailwindcss": "^1.7.5",
+        "webpackbar": "^4.0.0"
     }
 }
