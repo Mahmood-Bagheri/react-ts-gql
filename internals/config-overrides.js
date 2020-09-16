@@ -17,15 +17,13 @@ module.exports = {
         css: {
             loaderOptions: {
                 /* Any css-loader configuration options: https://github.com/webpack-contrib/css-loader. */
-            },
-            loaderOptions: (cssLoaderOptions, { env, paths }) => {
-                return cssLoaderOptions;
+                modules: {
+                    localIdentName: "[name]__[local]__[hash:base64:5]",
+                },
             },
         },
         sass: {
-            loaderOptions: {
-                /* Any sass-loader configuration options: https://github.com/webpack-contrib/sass-loader. */
-            },
+            loaderOptions: {},
             loaderOptions: (sassLoaderOptions, { env, paths }) => {
                 return sassLoaderOptions;
             },
