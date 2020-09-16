@@ -30,10 +30,6 @@
         "react-scripts": "3.4.3",
         "recoil": "^0.0.12",
         "styled-components": "^5.1.1",
-        "stylelint": "^13.7.0",
-        "stylelint-config-recommended": "^3.0.0",
-        "stylelint-config-styled-components": "^0.1.1",
-        "stylelint-processor-styled-components": "^1.10.0",
         "swr": "^0.3.2",
         "typescript": "~3.7.2"
     },
@@ -66,10 +62,6 @@
     },
     "cracoConfig": "internals/config-overrides.js",
     "devDependencies": {
-        "@graphql-codegen/cli": "1.17.8",
-        "@graphql-codegen/typescript": "^1.17.9",
-        "@graphql-codegen/typescript-operations": "^1.17.8",
-        "@graphql-codegen/typescript-react-apollo": "^2.0.6",
         "autoprefixer": "^9.8.6",
         "postcss-cli": "^7.1.1",
         "prettier": "^2.1.1",
