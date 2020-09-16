@@ -8,6 +8,9 @@ import App from "App";
 // * main style
 import "assets/styles/main.css";
 
+/* recoil service */
+import { RecoilService } from "services/recoil/recoilService";
+
 const MOUNT_NODE = document.getElementById("root") as HTMLElement;
 
 interface Props {
@@ -15,7 +18,9 @@ interface Props {
 }
 const ConnectedApp = ({ Component }: Props) => (
     <React.StrictMode>
-        <Component />
+        <RecoilService>
+            <Component />
+        </RecoilService>
     </React.StrictMode>
 );
 
