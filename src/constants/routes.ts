@@ -1,5 +1,8 @@
 export const Routes = {
-    home: "/app/home",
-    profile: "/user/:userId/profile/:profileId",
-    githubProfile: "/user/:userId/profile/:profileId/path/:someanotherId",
+    app: "/app",
+    dashboard: "/app/dashboard",
+    dashboardIntro: "/app/dashboard/intro",
+    user: "/user",
+    login: "/user/login",
+    error: "/error",
 };
