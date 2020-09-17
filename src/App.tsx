@@ -3,6 +3,9 @@ import React, { Suspense, FunctionComponent } from "react";
 // * modules
 import { Router, Switch, Route, Redirect } from "react-router-dom";
 
+/* route constants */
+import { Routes } from "constants/routes";
+
 // * services
 import { AuthRoute } from "services/auth/AuthRoute";
 
@@ -38,19 +41,23 @@ const App: FunctionComponent = () => {
                 <Router history={history}>
                     <Switch>
                         <AuthRoute
-                            path="/app"
+                            path={Routes.app}
                             authUser={auth}
                             component={ViewApp}
                         />
                         <Route
-                            path="/user"
+                            path={Routes.user}
                             render={props => <ViewUser {...props} />}
                         />
-                        <Route path="/error" exact component={ViewError} />
+                        <Route
+                            path={Routes.error}
+                            exact
+                            component={ViewError}
+                        />
 
                         <Route path="/" exact component={ViewMain} />
 
-                        <Redirect to="/error" />
+                        <Redirect to={Routes.error} />
                     </Switch>
                 </Router>
             </Suspense>
