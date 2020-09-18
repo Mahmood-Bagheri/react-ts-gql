@@ -1,4 +1,3 @@
-import { getRoute } from "helpers/routes";
 import React, { FunctionComponent } from "react";
 
 const Intro: FunctionComponent = props => {
