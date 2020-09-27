@@ -2,10 +2,10 @@ import React, { FunctionComponent } from "react";
 import { Redirect } from "react-router-dom";
 
 /* route constants */
-import { Routes } from "constants/routes";
+import __ROUTES__ from "constants/routes";
 
 const Main: FunctionComponent = () => {
-    return <Redirect to={Routes.app} />;
+    return <Redirect to={__ROUTES__.app} />;
 };
 
 export default Main;

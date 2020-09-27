@@ -4,7 +4,7 @@ import React, { Suspense, FunctionComponent } from "react";
 import { Router, Switch, Route, Redirect } from "react-router-dom";
 
 /* route constants */
-import { Routes } from "constants/routes";
+import __ROUTES__ from "constants/routes";
 
 // * services
 import { AuthRoute } from "services/auth/AuthRoute";
@@ -41,23 +41,23 @@ const App: FunctionComponent = () => {
                 <Router history={history}>
                     <Switch>
                         <AuthRoute
-                            path={Routes.app}
+                            path={__ROUTES__.app}
                             authUser={auth}
                             component={ViewApp}
                         />
                         <Route
-                            path={Routes.user}
+                            path={__ROUTES__.user}
                             render={props => <ViewUser {...props} />}
                         />
                         <Route
-                            path={Routes.error}
+                            path={__ROUTES__.error}
                             exact
                             component={ViewError}
                         />
 
                         <Route path="/" exact component={ViewMain} />
 
-                        <Redirect to={Routes.error} />
+                        <Redirect to={__ROUTES__.error} />
                     </Switch>
                 </Router>
             </Suspense>
