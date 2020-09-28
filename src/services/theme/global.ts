@@ -9,3 +9,5 @@ export const __DARK_THEME__ = {
         black: "#fff",
     },
 };
+
+export type ThemeType = typeof __LIGHT_THEME__;
