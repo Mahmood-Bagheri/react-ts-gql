@@ -1,7 +1,10 @@
 import React, { FunctionComponent } from "react";
 
+/* components */
+import { Product } from "components/Product";
+
 const Intro: FunctionComponent = props => {
-    return <div>intro page</div>;
+    return <Product />;
 };
 
 export default Intro;

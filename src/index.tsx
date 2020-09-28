@@ -10,6 +10,8 @@ import "assets/styles/main.css";
 
 /* recoil service */
 import { RecoilService } from "services/recoil/recoilService";
+import { ReactQueryService } from "services/api/react-query/reactQueryService";
+import { ThemeService } from "services/theme/themeService";
 
 const MOUNT_NODE = document.getElementById("root") as HTMLElement;
 
@@ -19,7 +21,11 @@ interface Props {
 const ConnectedApp = ({ Component }: Props) => (
     <React.StrictMode>
         <RecoilService>
-            <Component />
+            <ReactQueryService>
+                <ThemeService>
+                    <Component />
+                </ThemeService>
+            </ReactQueryService>
         </RecoilService>
     </React.StrictMode>
 );

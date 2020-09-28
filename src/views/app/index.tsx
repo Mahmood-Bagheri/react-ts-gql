@@ -2,7 +2,7 @@ import React, { Suspense, FunctionComponent } from "react";
 import { Route, Switch, Redirect, useRouteMatch } from "react-router-dom";
 
 /* route constants */
-import { Routes } from "constants/routes";
+import __ROUTES__ from "constants/routes";
 
 const Dashboard = React.lazy(
     () => import(/* webpackChunkName: "viwes-dashboard" */ "./dashboard")
@@ -14,11 +14,15 @@ const App: FunctionComponent = () => {
     return (
         <Suspense fallback={<div className="loading" />}>
             <Switch>
-                <Redirect exact from={`${match.url}/`} to={Routes.dashboard} />
+                <Redirect
+                    exact
+                    from={`${match.url}/`}
+                    to={__ROUTES__.dashboard}
+                />
 
-                <Route path={Routes.dashboard} component={Dashboard} />
+                <Route path={__ROUTES__.dashboard} component={Dashboard} />
 
-                <Redirect to={Routes.error} />
+                <Redirect to={__ROUTES__.error} />
             </Switch>
         </Suspense>
     );
