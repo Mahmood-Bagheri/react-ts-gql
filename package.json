@@ -34,8 +34,8 @@
         "typescript": "~3.7.2"
     },
     "scripts": {
-        "start": "craco start",
-        "build": "craco build",
+        "start": "yarn build:style && craco start",
+        "build": "yarn build:style && craco build",
         "build:style": "tailwind build src/assets/styles/tailwind.css -o src/assets/styles/main.css",
         "test": "craco test",
         "eject": "craco eject",
