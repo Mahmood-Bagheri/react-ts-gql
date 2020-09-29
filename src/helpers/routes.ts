@@ -1,13 +1,13 @@
 import _ from "lodash";
-import { Routes } from "constants/routes";
+import __ROUTES__ from "constants/routes";
 
-type GetRoutePathProps = keyof typeof Routes;
+type GetRoutePathProps = keyof typeof __ROUTES__;
 
 export const getRoute = (path: GetRoutePathProps, params: string[] = []) => {
     if (params) {
-        return appendRouteParam(_.get(Routes, path), params);
+        return appendRouteParam(_.get(__ROUTES__, path), params);
     }
-    return _.get(Routes, path);
+    return _.get(__ROUTES__, path);
 };
 
 const appendRouteParam = (route: string, routeParamValues: string[]) => {

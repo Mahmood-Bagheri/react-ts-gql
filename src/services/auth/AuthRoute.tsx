@@ -3,6 +3,7 @@ import React from "react";
 // * modules
 import { Route, Redirect, RouteComponentProps } from "react-router-dom";
 import { FunctionComponent, ComponentType } from "react";
+import __ROUTES__ from "constants/routes";
 
 type AuthRouteProps = {
     path: string;
@@ -24,7 +25,7 @@ export const AuthRoute: FunctionComponent<AuthRouteProps> = ({
                 ) : (
                     <Redirect
                         to={{
-                            pathname: "/user/login",
+                            pathname: __ROUTES__.login,
                             state: { from: props.location },
                         }}
                     />

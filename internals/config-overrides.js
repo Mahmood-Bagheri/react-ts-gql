@@ -17,9 +17,6 @@ module.exports = {
         css: {
             loaderOptions: {
                 /* Any css-loader configuration options: https://github.com/webpack-contrib/css-loader. */
-                modules: {
-                    localIdentName: "[name]__[local]__[hash:base64:5]",
-                },
             },
         },
         sass: {
