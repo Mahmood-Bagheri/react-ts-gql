@@ -21,7 +21,7 @@ type ButtonExtraProps = {
 };
 
 // * integrate HTML button props with our custom props
-type ButtonProps = Omit<
+export type ButtonProps = Omit<
     React.HtmlHTMLAttributes<HTMLButtonElement>,
     keyof ButtonExtraProps
 > &
@@ -62,7 +62,13 @@ export const Button: React.FC<ButtonProps> = props => {
     ];
 
     // * render the button 🔥
-    return <button className={classnames(classNames)} {...restProps} />;
+    return (
+        <button
+            data-testid="btn"
+            className={classnames(classNames)}
+            {...restProps}
+        />
+    );
 };
 
 function makeSize(size: ButtonSizeType) {
