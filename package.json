@@ -45,9 +45,7 @@
         "eject": "craco eject",
         "format": "prettier --write src",
         "styleguidist:server": "styleguidist server",
-        "styleguidist:build": "styleguidist build",
-        "codegen": "graphql-codegen --config codegen.yml",
-        "lint:css": "stylelint src/**/*.css"
+        "styleguidist:build": "styleguidist build"
     },
     "eslintConfig": {
         "extends": "react-app"
