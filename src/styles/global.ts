@@ -24,3 +24,7 @@ export const Shimmer = styled.div`
         animation: ${progress} 1s ease-in-out infinite;
     }
 `;
+
+export const Container = styled.div.attrs({
+    className: "container",
+})``;
