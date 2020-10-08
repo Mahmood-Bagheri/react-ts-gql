@@ -25,3 +25,5 @@ yarn-error.log*
 
 # tailwind compiled styles
 src/assets/styles/main.css
+
+.vercel
