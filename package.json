@@ -45,10 +45,7 @@
         "eject": "craco eject",
         "format": "prettier --write src",
         "styleguidist:server": "styleguidist server",
-        "styleguidist:build": "styleguidist build",
-        "codegen": "graphql-codegen --config codegen.yml",
-        "lint:css": "stylelint src/**/*.css",
-        "netlify:publish": "curl -X POST -d {} https://api.netlify.com/build_hooks/5f7353b83c8c7615a1b6a2ca"
+        "styleguidist:build": "styleguidist build"
     },
     "eslintConfig": {
         "extends": "react-app"
