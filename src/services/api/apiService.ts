@@ -1,10 +1,10 @@
 import axios from "axios";
 
 // * interceptors
-import { applyAuthInterceptor } from "./interceptors/Auth";
-import { applyAccessTokenRevalidator } from "./interceptors/TokenRevalidator";
-import { applyErrorHandler } from "./interceptors/ErrorHandler";
-import { applyResponseNormalizer } from "./interceptors/ResponseNormalizer";
+import { applyAuthInterceptor } from "./interceptors/auth";
+import { applyAccessTokenRevalidator } from "./interceptors/tokenRevalidator";
+import { applyErrorHandler } from "./interceptors/errorHandler";
+import { applyResponseNormalizer } from "./interceptors/responseNormalizer";
 
 const apiService = axios.create({
     baseURL: process.env.REACT_APP_BASE_URL,
