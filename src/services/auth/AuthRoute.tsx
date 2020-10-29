@@ -1,7 +1,8 @@
 import React from "react";
 
 // * modules
-import { Route, Redirect, RouteComponentProps } from "react-router-dom";
+import { Redirect, RouteComponentProps } from "react-router-dom";
+import { Route } from "components/Route";
 import { FunctionComponent, ComponentType } from "react";
 import __ROUTES__ from "constants/routes";
 
