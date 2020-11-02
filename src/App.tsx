@@ -1,7 +1,8 @@
-import React, { Suspense, FunctionComponent } from "react";
+import React, { Suspense, FunctionComponent, useEffect } from "react";
 
 // * modules
-import { Router, Switch, Route, Redirect } from "react-router-dom";
+import { Router, Switch, Redirect, useLocation } from "react-router-dom";
+import { Route } from "components/Route";
 
 /* route constants */
 import __ROUTES__ from "constants/routes";
