@@ -27,8 +27,7 @@ module.exports = plop => {
                 // Add a new file
                 type: "add",
                 // Path for the new file
-                path:
-                    "src/components/{{properCase name}}/{{properCase name}}.ts",
+                path: "src/components/{{properCase name}}/styles.ts",
                 // Handlebars template used to generate content of new file
                 templateFile: "internals/plop-templates/component/styles.hbs",
             },
