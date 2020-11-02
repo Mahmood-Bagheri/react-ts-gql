@@ -46,7 +46,8 @@
         "eject": "craco eject",
         "format": "prettier --write src",
         "styleguidist:server": "styleguidist server",
-        "styleguidist:build": "styleguidist build"
+        "styleguidist:build": "styleguidist build",
+        "generate": "plop"
     },
     "eslintConfig": {
         "extends": "react-app"
