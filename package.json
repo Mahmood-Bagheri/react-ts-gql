@@ -66,6 +66,7 @@
     "cracoConfig": "internals/config-overrides.js",
     "devDependencies": {
         "autoprefixer": "^9.8.6",
+        "plop": "^2.7.4",
         "postcss-cli": "^7.1.1",
         "prettier": "^2.1.1",
         "react-styleguidist": "^11.0.8",
