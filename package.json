@@ -46,7 +46,8 @@
         "eject": "craco eject",
         "format": "prettier --write src",
         "styleguidist:server": "styleguidist server",
-        "styleguidist:build": "styleguidist build"
+        "styleguidist:build": "styleguidist build",
+        "generate": "plop"
     },
     "eslintConfig": {
         "extends": "react-app"
@@ -66,6 +67,7 @@
     "cracoConfig": "internals/config-overrides.js",
     "devDependencies": {
         "autoprefixer": "^9.8.6",
+        "plop": "^2.7.4",
         "postcss-cli": "^7.1.1",
         "prettier": "^2.1.1",
         "react-styleguidist": "^11.0.8",
