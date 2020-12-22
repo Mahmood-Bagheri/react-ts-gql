@@ -66,6 +66,8 @@
     },
     "cracoConfig": "internals/config-overrides.js",
     "devDependencies": {
+        "@commitlint/cli": "^11.0.0",
+        "@commitlint/config-conventional": "^11.0.0",
         "autoprefixer": "^9.8.6",
         "husky": "^4.3.6",
         "plop": "^2.7.4",
