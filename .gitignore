@@ -27,3 +27,5 @@ yarn-error.log*
 src/assets/styles/main.css
 
 .vercel
+
+debug.log
