@@ -1,10 +1,5 @@
-import React, { FunctionComponent } from "react";
+import React, { HtmlHTMLAttributes, useRef } from "react";
 
-/* components */
-import { Product } from "components/Product";
-
-const Intro: FunctionComponent = props => {
-    return <Product />;
-};
-
-export default Intro;
+export default function App() {
+    return <div>Hello world!</div>;
+}

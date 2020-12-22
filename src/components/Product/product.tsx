@@ -11,14 +11,7 @@ type ProductProps = {};
 
 export const Product: FunctionComponent<ProductProps> = props => {
     return (
-        <ProductWrapper>
-            <ProductBody
-                about="products"
-                aria-details="the products list goes here"
-                onChange={() => {}}
-                onSelect={() => {}}
-                onSomeEvent={() => {}}
-            />
+        <ProductWrapper {...props}>
             <ProductFooter />
         </ProductWrapper>
     );
