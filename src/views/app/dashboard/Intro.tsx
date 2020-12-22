@@ -1,5 +1,5 @@
 import React, { HtmlHTMLAttributes, useRef } from "react";
 
 export default function App() {
-    return <div>Shit</div>;
+    return <div>Hello world!</div>;
 }
